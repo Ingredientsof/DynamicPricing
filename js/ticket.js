@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacityAlert.style.display = 'none';
 
         // 마참내...
-        window.location.href = './WhatIs.html';
+        window.location.href = './whatIs.html';
     });
 
     // 아니오
@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // 나갔다오면 초기화
-
 (document).ready(function() {
     $('#button1').val('');
 });
