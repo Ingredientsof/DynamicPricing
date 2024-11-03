@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Your Ticket!</title>
+    <link rel="icon" href="./css/img/favicon.ico">
+    <link rel="stylesheet" href="./css/ticket.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/ticket.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <section class="">
+        <header class="headerBox">
+            <div class="headerName"><a href="./index.html">동적가격(Dynamic Pricing)</a></div>
+        </header>
+    </section>
+
+    <hr class="whereHr">
+
+    <!-- 바디 -->
+    <section class="allMaintain">
+        <section class="main_box_ticket">
+            <img src="./css/img/main_time.png" alt="" class="draw_shadow">
+            <img src="./css/img/main_concurrent.png" alt="" class="draw_shadow">
+            <section class="allTextBox">
+                <section class="timeContainer">
+                    <div class="timeText text-white">시간 :</div>
+                    <div class="timeGo text-white" id="timeSet"></div>
+                </section>
+                <section class="countPersonBox text-blue">
+                    <div class="countText">접속자 :</div>
+                    <div class="nowCount" id="countUp">1</div>
+                    <div class="countText2">명</div>
+                </section>
+            </section>
+        </section>
+
+        <section class="second_ticket draw_shadow">
+            <section class="bgBox">
+                <img src="./css/img/main_background.png" alt="main_bg"></div>
+                <section class="bg_textMytrun text-white">
+                    <div class="" style="display: inline;">나의 대기번호 :</div>
+                    <div class="" style="display: inline;" id="CountDownWaiting">1034</div>
+                </section>
+            </section>
+            <section class="mutiImage">
+                <img src="./css/img/main_ticket2.png" alt="" class="mutiSize muti1">
+                <img src="./css/img/main_ticket1.png" alt="" class="mutiSize muti2">
+                <section class="overlayText">
+                    <div class="text-blue">나의 티켓값은</div>
+                    <div class="text-orange" style="display: inline;" id="ticketValue">19000</div>
+                    <div class="text-blue" style="display: inline;">원</div>
+                </section>
+            </section>
+        </section>
+
+        <section class="third_ticket draw_shadow">
+            <img src="./css/img/main_downer_ticket1.png" alt="" class="">
+            <img src="./css/img/main_button.png" alt="" class="fade_image" style="opacity: 0.3;">
+        </section>
+
+        <!-- 내 차례 아닐때 -->
+        <div id="customAlert" class="custom-alert" style="display: none;">
+            <div class="alert-content">
+                <span class="alert-title">구매 실패</span>
+                <p class="alert-message">내 순서가 아닙니다.</p>
+                <button id="closeAlert">닫기</button>
+            </div>
+        </div>
+
+
+        <!-- 내차례임-->
+        <div id="opacityAlert" class="custom-alert" style="display: none;">
+            <div class="alert-content">
+                <span class="alert-title">티켓 구매 확인</span>
+                <p class="alert-message">현재 티켓 가격:
+                    <span id="currentTicketValue">19000</span>
+                    원입니다. <br>구매하시겠습니까?
+                </p>
+                <button id="confirmYes">예</button>
+                <button id="confirmNo">아니오</button>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer class="text-center text-black text-kr-normal footerFixed">
+            <p>한경국립대학교 디자인건축융합학부 시각미디어디자인 | 강유하, 박소연 | 지도교수 나상호</p>
+            <p>이 웹사이트는 디지털퍼블리싱2 수업의 일환으로 제작되었습니다.</p>
+            <p>Copyright@KangYuHa, ParkSoYeon</p>
+        </footer>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+
+:root {
+    --Main_color: #F15928; /*메인컬러*/
+    /* --Main_color_hover: #FF6A89;  */
+    /*메인컬러 호버*/
+    /* --back_color: #a379a326;   */
+    /* 배경컬러 */
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans KR", sans-serif;
+    user-select: none;
+
+    cursor: url(./img/pixel_cursor2.png)1 1, auto;
+}
+
+
+
+/* /////////////////////////////// 메인 인텍스 코드 /////////////////////////////// */
+/* 링크 데코 없애기 */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 홈페이지 값 */
+html{
+    font-size: 10px;
+}
+.no-drag{
+    user-select: none;
+}
+
+
+/*몸통 설정*/
+body{
+    margin:  auto;
+    background-image: url(img/Paper-Texture-5.jpg);
+    display: flex;    
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_box {
+    min-width: 800px;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_box .back_img_box {
+    width: auto;
+    height: 80vh;
+    max-height: 710px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_box .back_img_box img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+.main_box .main_font {
+    color: var(--Main_color);
+    font-size: 5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 16%;
+    text-align: center;
+}
+
+.main_box .sub_font {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color:rgb(44, 49, 69);
+}
+
+/* 입력 박스 */
+.main_box .input_top_text {
+    background-color: #fff;
+    width: 66%;
+    height: 22%;
+    position: absolute;
+    top: 44%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+    
+.main_box .input_top_text .box01 {
+    width: 100%;
+    height: auto;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.main_box .input_top_text .boxText {
+    text-align: center;
+    vertical-align: center;
+    padding: 15px 5px;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #F15928;
+}
+
+.bottom_section {
+    background-color: #fff;
+    width: 66%;
+    height: 11%;
+    position: absolute;
+    top: 68%;
+}
+    
+.bottom_section input {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    border: 0;
+    text-indent: 10px; 
+}
+
+.bottom_section input:focus {
+    border: 3px solid #F15928;
+    outline: none;
+    transition: border 0.07s;
+    transform: translateX(-2px) translateY(-2px);
+}
+    
+    
+.button_section{
+    position: absolute;
+    top: 81%;
+    background-color: #F15928;
+    width: 66%;
+    height: 11%;
+    text-align: center;
+    
+}
+
+.button_section .btn_text_check {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 0;
+}
+
+.button_section .btn_text_style {
+    background-color: #f15928;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_section .btn_text_style:disabled {
+    background-color: #bd9587;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 800px){
+    .main_box .back_img_box {
+        width: 80vw;
+        height: auto;
+        max-height: 100vh;
+    }
+
+
+    .main_box .main_font {
+        font-size: 6.5vw;
+    }
+
+    .main_box .sub_font {
+        font-size: 2.5vw;
+    }
+
+    .main_box .input_top_text .boxText {
+        font-size: 7vw;
+    }
+
+    .bottom_section input {
+        font-size: 2.5vw;
+    }
+
+    .button_section .btn_text_check {
+        font-size: 3vw;
+    }
+}
+
+
+
+/*///////////////개별설정////////////////*/
+/* 시작 화면 */
+
+/* 공통 구조 */
+
+.text-kr-normal{font-family: "Noto Sans KR", sans-serif;}
+.text-en-normal{font-family: "Newsreader", sans-serif;}
+
+.text-white{color: white;}
+.text-black{color: rgb(0, 0, 0);}
+.text-gray{color: rgb(44, 49, 69);}
+.text-red{color: rgb(255, 0, 0);}
+.text-orange{color: #F15928;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.footerFixed {
+    position: relative;
+    bottom: 25px;
+    font-size: 1rem;
+}
+
+/* 이미지 효과*/
+.imageEffectHardlight {
+    mix-blend-mode: hard-light;
+    filter: contrast(1.5);
+}
+
+.imageEffectScreen {
+    mix-blend-mode: screen;
+    filter: contrast(1.5);
+}
+
+
+/* 푸터 */
+footer{
+    height: 100px;
+    margin: 50px;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}

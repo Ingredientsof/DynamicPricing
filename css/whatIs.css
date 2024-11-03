@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans KR", sans-serif;
+    user-select: none;
+
+    cursor: url(./img/pixel_cursor2.png)1 1, auto;
+}
+
+.page {
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.page1Color {
+    background-color: #1A58A5;
+}
+
+.page2Color {
+    background-color: #70a51a;
+}
+
+/*몸통 설정*/
+body{
+    margin:  auto;
+    background-image: url(img/Paper-Texture-5.jpg);
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* /////////////////////////////// 메인 인텍스 코드 /////////////////////////////// */
+/* 링크 데코 없애기 */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 홈페이지 값 */
+html{
+    font-size: 10px;
+}
+
+/*/////////////////////헤더/////////////////////*/
+
+.headerBox {
+    background-color: #e7420b;
+    padding: 10px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerBox .headerName {
+    margin-left: calc(100% - 89.5%);
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.headerBox .headerName a{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.headerBox .headerName a:hover{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgb(25, 98, 194);
+    cursor: pointer;
+}
+
+.whereHr {
+    border: none;
+    height: 0;
+    border-top: 4px solid #F15928;
+    width: 100%;
+    max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+    .footerFixed {
+        font-size: 1.2vw;
+    }
+}
+
+@media (min-width: 1770px) {
+    .headerBox .headerName {
+        margin-left: calc(100% - 90% + (100vw - 1770px) * 0.4);
+    }
+}
+
+/*/////////////////////공통/////////////////////*/
+
+.text-kr-normal{font-family: "Noto Sans KR", sans-serif;}
+.text-en-normal{font-family: "Newsreader", sans-serif;}
+
+.text-white{color: white;}
+.text-black{color: rgb(0, 0, 0);}
+.text-gray{color: rgb(44, 49, 69);}
+.text-red{color: rgb(255, 0, 0);}
+.text-blue{color: #1A58A5;}
+.text-orange{color: #F15928;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+
+/* 이미지 효과*/
+.draw_shadow {
+    filter: drop-shadow(2px 2px 2px #979390);
+}
+
+/* 푸터 */
+footer{
+    height: 100px;
+    margin: 50px;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 1rem;
+}
